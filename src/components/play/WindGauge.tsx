@@ -22,7 +22,13 @@ function randomZone() {
 export function WindGauge({ onCleared }: { onCleared: () => void }) {
   const [phase, setPhase] = useState<Phase>("idle");
   const [attempt, setAttempt] = useState(0);
-  const [zone, setZone] = useState(() => randomZone());
+  // null until the player's first click generates it — the page is
+  // statically prerendered, so a Math.random() call during the initial
+  // render would bake one value into the built HTML while the client
+  // computed a different one during hydration (a hydration mismatch).
+  // Deriving it only inside an event handler (startAttempt) keeps every
+  // render pure and avoids that entirely.
+  const [zone, setZone] = useState<{ start: number; end: number } | null>(null);
   const [markerPct, setMarkerPct] = useState(0);
   const reduced = useReducedMotion();
   const rafRef = useRef(0);
@@ -30,7 +36,7 @@ export function WindGauge({ onCleared }: { onCleared: () => void }) {
   const trackRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (phase !== "moving" || reduced) return;
+    if (phase !== "moving" || reduced || !zone) return;
     startRef.current = performance.now();
     function loop(now: number) {
       const elapsed = now - startRef.current;
@@ -39,7 +45,7 @@ export function WindGauge({ onCleared }: { onCleared: () => void }) {
     }
     rafRef.current = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(rafRef.current);
-  }, [phase, reduced]);
+  }, [phase, reduced, zone]);
 
   function startAttempt() {
     setZone(randomZone());
@@ -47,7 +53,7 @@ export function WindGauge({ onCleared }: { onCleared: () => void }) {
   }
 
   function catchWind() {
-    if (reduced) {
+    if (reduced || !zone) {
       setPhase("success");
       return;
     }
@@ -62,11 +68,13 @@ export function WindGauge({ onCleared }: { onCleared: () => void }) {
   return (
     <div className={styles.wrap}>
       <div className={styles.track} ref={trackRef} role="img" aria-label="Wskaźnik siły i kierunku podmuchu wiatru">
-        <div
-          className={styles.safeZone}
-          style={{ left: `${zone.start}%`, width: `${zone.end - zone.start}%` }}
-        />
-        {phase === "moving" && !reduced && (
+        {zone && (
+          <div
+            className={styles.safeZone}
+            style={{ left: `${zone.start}%`, width: `${zone.end - zone.start}%` }}
+          />
+        )}
+        {phase === "moving" && !reduced && zone && (
           <div className={styles.marker} style={{ left: `${markerPct}%` }} />
         )}
       </div>
@@ -93,7 +101,8 @@ export function WindGauge({ onCleared }: { onCleared: () => void }) {
           </button>
         )}
         <span className={styles.hint}>
-          {phase === "idle" && "Podświetlony fragment paska to moment ciszy między porywami."}
+          {phase === "idle" &&
+            "Kliknij, aby zobaczyć, w którym miejscu paska pojawi się moment ciszy między porywami."}
           {phase === "moving" && "Kliknij, gdy znacznik wejdzie w podświetloną strefę."}
           {phase === "fail" &&
             (attempt > 2
