@@ -1,0 +1,92 @@
+.stage {
+  position: relative;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(233, 238, 240, 0.1);
+  background: linear-gradient(180deg, rgba(30, 46, 59, 0.55), rgba(10, 15, 20, 0.85)), var(--color-abyss-800);
+  padding: var(--space-6);
+  overflow: hidden;
+  min-height: 22rem;
+}
+
+.progress {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+.progressDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(233, 238, 240, 0.18);
+}
+
+.progressDotDone {
+  background: var(--color-amber-400);
+}
+
+.body {
+  position: relative;
+  z-index: 1;
+  max-width: 34rem;
+}
+
+.sceneLabel {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-amber-300);
+  margin-bottom: var(--space-3);
+}
+
+.sceneText {
+  font-size: 1.06rem;
+  color: var(--color-mist-100);
+}
+
+.sceneText + .sceneText {
+  margin-top: var(--space-3);
+}
+
+.choices {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.choiceBtn {
+  border: 1px solid rgba(233, 238, 240, 0.24);
+  background: rgba(15, 23, 32, 0.6);
+  color: var(--color-mist-050);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.94rem;
+  text-align: left;
+  transition: border-color 0.15s var(--ease-out), background 0.15s var(--ease-out);
+}
+
+.choiceBtn:hover {
+  border-color: var(--color-amber-400);
+  background: rgba(224, 151, 63, 0.08);
+}
+
+.journal {
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  border-left: 2px solid var(--color-tide-400);
+  background: rgba(63, 143, 138, 0.08);
+  font-size: 0.9rem;
+  color: var(--color-mist-100);
+  font-style: italic;
+}
+
+.epilogueActions {
+  margin-top: var(--space-6);
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}

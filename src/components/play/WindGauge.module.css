@@ -1,0 +1,69 @@
+.wrap {
+  margin-top: var(--space-5);
+}
+
+.track {
+  position: relative;
+  height: 44px;
+  border-radius: var(--radius-pill);
+  background: var(--color-abyss-800);
+  border: 1px solid rgba(233, 238, 240, 0.12);
+  overflow: hidden;
+}
+
+.safeZone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(126, 205, 198, 0.25);
+  border-left: 1px solid var(--color-tide-300);
+  border-right: 1px solid var(--color-tide-300);
+}
+
+.marker {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  width: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--color-amber-400);
+  box-shadow: 0 0 12px rgba(240, 178, 95, 0.7);
+  transform: translateX(-50%);
+}
+
+.controls {
+  margin-top: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.controls button {
+  border: none;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, var(--color-amber-500), var(--color-amber-600));
+  color: var(--color-abyss-900);
+  padding: var(--space-3) var(--space-5);
+  font-weight: 700;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 0.86rem;
+  color: var(--color-mist-300);
+}
+
+.result {
+  margin-top: var(--space-4);
+  font-size: 0.94rem;
+}
+
+.resultOk {
+  color: var(--color-tide-300);
+}
+
+.resultFail {
+  color: var(--color-amber-300);
+}

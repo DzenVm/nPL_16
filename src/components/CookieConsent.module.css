@@ -1,0 +1,96 @@
+.wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: var(--space-4);
+  display: flex;
+  justify-content: center;
+  animation: rise 0.4s var(--ease-out);
+}
+
+@keyframes rise {
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.panel {
+  width: 100%;
+  max-width: 56rem;
+  background: var(--color-abyss-700);
+  border: 1px solid rgba(233, 238, 240, 0.1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-5);
+}
+
+.text {
+  font-size: 0.9rem;
+  color: var(--color-mist-300);
+  margin-bottom: var(--space-4);
+}
+
+.text a {
+  color: var(--color-amber-300);
+}
+
+.options {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+  padding: var(--space-4);
+  background: var(--color-abyss-800);
+  border-radius: var(--radius-md);
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: 0.86rem;
+  color: var(--color-mist-100);
+}
+
+.option strong {
+  display: block;
+  font-size: 0.88rem;
+}
+
+.option span.small {
+  color: var(--color-mist-300);
+  font-size: 0.82rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.btnPrimary, .btnGhost, .btnLink {
+  border-radius: var(--radius-pill);
+  padding: var(--space-2) var(--space-5);
+  font-size: 0.88rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, var(--color-amber-500), var(--color-amber-600));
+  color: var(--color-abyss-900);
+}
+
+.btnGhost {
+  background: transparent;
+  border-color: rgba(233, 238, 240, 0.25);
+  color: var(--color-mist-100);
+}
+
+.btnLink {
+  background: transparent;
+  color: var(--color-mist-300);
+  text-decoration: underline;
+  padding-inline: var(--space-2);
+}

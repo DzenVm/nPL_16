@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="t3">
+  <title id="t3">Podziemna sztolnia z bryłami bursztynu w ścianach, przez które przenika światło</title>
+  <defs>
+    <linearGradient id="cave" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1116"/>
+      <stop offset="1" stop-color="#131f27"/>
+    </linearGradient>
+    <radialGradient id="amberGlow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f0b25f" stop-opacity="0.95"/>
+      <stop offset="0.6" stop-color="#c97a2b" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#c97a2b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7cd8b" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f7cd8b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#cave)"/>
+
+  <path d="M0 0 L120 0 L60 220 L0 260 Z" fill="#0e1a22"/>
+  <path d="M1200 0 L1050 0 L1130 240 L1200 210 Z" fill="#0e1a22"/>
+  <path d="M0 630 L0 480 L200 420 L420 500 L620 440 L860 520 L1050 460 L1200 500 L1200 630 Z" fill="#0d171e"/>
+
+  <g opacity="0.9">
+    <polygon points="180,120 260,150 250,240 170,260 130,190" fill="url(#amberGlow1)"/>
+    <polygon points="560,90 640,130 620,210 540,220 505,150" fill="url(#amberGlow1)"/>
+    <polygon points="940,160 1020,190 1000,270 920,280 885,210" fill="url(#amberGlow1)"/>
+    <polygon points="360,380 420,410 405,470 345,475 320,420" fill="url(#amberGlow1)"/>
+    <polygon points="780,400 850,430 830,500 760,505 735,445" fill="url(#amberGlow1)"/>
+  </g>
+
+  <path d="M200 0 L260 630 L340 630 L300 0 Z" fill="url(#beam)"/>
+  <path d="M700 0 L640 630 L560 630 L640 0 Z" fill="url(#beam)" opacity="0.6"/>
+
+  <g fill="#f7cd8b" opacity="0.7">
+    <circle cx="230" cy="180" r="4"/>
+    <circle cx="600" cy="150" r="3"/>
+    <circle cx="980" cy="210" r="3.5"/>
+    <circle cx="390" cy="420" r="3"/>
+    <circle cx="810" cy="450" r="3.5"/>
+  </g>
+</svg>

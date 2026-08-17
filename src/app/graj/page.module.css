@@ -1,0 +1,69 @@
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-5) var(--space-9);
+}
+
+.header {
+  max-width: 40rem;
+  margin-bottom: var(--space-6);
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-amber-300);
+  margin-bottom: var(--space-3);
+}
+
+.h1 {
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+}
+
+.lede {
+  margin-top: var(--space-4);
+  color: var(--color-mist-300);
+  font-size: 1.02rem;
+}
+
+.notice {
+  margin-top: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid rgba(224, 151, 63, 0.35);
+  background: rgba(224, 151, 63, 0.08);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  color: var(--color-mist-100);
+}
+
+.helpGrid {
+  margin-top: var(--space-8);
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+  max-width: 48rem;
+}
+
+@media (min-width: 640px) {
+  .helpGrid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.helpCard {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-abyss-700);
+  border: 1px solid rgba(233, 238, 240, 0.08);
+  font-size: 0.88rem;
+  color: var(--color-mist-300);
+}
+
+.helpCard strong {
+  display: block;
+  color: var(--color-mist-050);
+  font-size: 0.94rem;
+  margin-bottom: var(--space-2);
+}

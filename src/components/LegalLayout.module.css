@@ -1,0 +1,64 @@
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-5) var(--space-9);
+}
+
+.kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-amber-300);
+  margin-bottom: var(--space-3);
+  display: block;
+}
+
+.h1 {
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+}
+
+.updated {
+  margin-top: var(--space-3);
+  font-size: 0.86rem;
+  color: var(--color-mist-300);
+}
+
+.prose {
+  margin-top: var(--space-7);
+}
+
+.prose h2 {
+  font-size: 1.25rem;
+  margin-top: var(--space-7);
+  margin-bottom: var(--space-3);
+}
+
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.prose p {
+  color: var(--color-mist-100);
+  font-size: 0.98rem;
+  margin-top: var(--space-3);
+}
+
+.prose ul {
+  margin-top: var(--space-3);
+  padding-left: 1.2rem;
+  color: var(--color-mist-100);
+  font-size: 0.98rem;
+}
+
+.prose li {
+  margin-top: var(--space-2);
+  list-style: disc;
+}
+
+.prose a {
+  color: var(--color-amber-300);
+}
+
+.prose strong {
+  color: var(--color-mist-050);
+}
