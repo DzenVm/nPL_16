@@ -11,7 +11,7 @@ export function SiteFooter() {
           <p className={styles.note}>
             Serwis dostępny pod adresem {site.domain} prezentuje przygodową, eksploracyjną
             grę przeglądarkową we wczesnej fazie produkcji oraz jej pierwszy, grywalny
-            odcinek demonstracyjny. Status każdego elementu jest opisany wprost — bez
+            odcinek demonstracyjny. Status każdego elementu jest opisany wprost, bez
             obietnic dat premiery, których nie jesteśmy w stanie dotrzymać.
           </p>
         </div>

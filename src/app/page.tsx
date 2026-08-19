@@ -14,7 +14,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Strona główna",
   description:
-    "Przeglądarkowa gra przygodowa bez przemocy i mikropłatności. Poznaj mechaniki, sześć rozdziałów wyprawy i zagraj w pierwszy odcinek za darmo.",
+    "Poznaj mechaniki, sześć rozdziałów przygodowej wyprawy wzdłuż wybrzeża i zagraj w pierwszy odcinek już teraz, w przeglądarce.",
 };
 
 const statusLabel: Record<string, string> = {
@@ -67,9 +67,9 @@ export default function HomePage() {
             którą rysujesz sam.
           </h1>
           <p className={styles.heroLede}>
-            Bez walki, bez mikropłatności i bez ekranów z prośbą o ocenę w sklepie. Sześć
-            rozdziałów wyprawy wzdłuż zapomnianego wybrzeża — pierwszy z nich możesz sprawdzić
-            już teraz, w przeglądarce, bez instalacji.
+            Sześć rozdziałów wyprawy wzdłuż zapomnianego wybrzeża, bez walki i bez ekranów z
+            prośbą o ocenę w sklepie. Pierwszy z nich możesz sprawdzić już teraz, w
+            przeglądarce, bez instalacji.
           </p>
           <div className={styles.heroActions}>
             <Link href="/graj" className={styles.btnPrimary}>
@@ -89,8 +89,8 @@ export default function HomePage() {
               <div className={styles.statLabel}>mechanik eksploracji</div>
             </div>
             <div>
-              <div className={styles.statValue}>0 zł</div>
-              <div className={styles.statLabel}>mikropłatności i loot boxów</div>
+              <div className={styles.statValue}>0</div>
+              <div className={styles.statLabel}>wymaganych instalacji</div>
             </div>
           </div>
         </div>
@@ -110,11 +110,10 @@ export default function HomePage() {
               potrafi ujawnić przejścia niewidoczne o każdej innej porze dnia.
             </p>
             <p>
-              Gracz wciela się w kogoś, kto dokumentuje to wybrzeże — nie po to, by je podbić
-              czy „przejść”, ale by je zrozumieć. Zamiast paska zdrowia i przeciwników,
-              najważniejszym zasobem jest uwaga: umiejętność odczytania podmuchu, zapamiętania
-              cyklu przypływu i skojarzenia fragmentu notatki z miejscem, w którym można ją
-              dokończyć.
+              Gracz wciela się w kogoś, kto dokumentuje to wybrzeże, a nie próbuje go podbić
+              czy „przejść”. Zamiast paska zdrowia i przeciwników najważniejszym zasobem jest
+              uwaga: umiejętność odczytania podmuchu, zapamiętania cyklu przypływu i
+              skojarzenia fragmentu notatki z miejscem, w którym można ją dokończyć.
             </p>
             <p className={styles.pullquote}>
               „Nie mapujemy tego wybrzeża, żeby je oswoić. Mapujemy je, bo ono samo bardzo tego
@@ -148,14 +147,13 @@ export default function HomePage() {
         <h2 className={styles.h2}>Sześć założeń projektowych, których się trzymamy</h2>
         <p className={styles.lede}>
           Zamiast listy funkcji, wolimy pokazać zasady, według których podejmujemy decyzje
-          projektowe — łatwiej wtedy ocenić, czy ten kierunek w ogóle jest dla Ciebie.
+          projektowe. Łatwiej wtedy ocenić, czy ten kierunek w ogóle jest dla Ciebie.
         </p>
-        <div className={styles.grid3}>
-          {principles.map((p, i) => (
-            <div className={styles.card} key={p.title}>
-              <div className={styles.cardNum}>{String(i + 1).padStart(2, "0")}</div>
-              <h3 className={styles.cardTitle}>{p.title}</h3>
-              <p className={styles.cardText}>{p.detail}</p>
+        <div className={styles.principleList}>
+          {principles.map((p) => (
+            <div className={styles.principleRow} key={p.title}>
+              <h3 className={styles.principleTitle}>{p.title}</h3>
+              <p className={styles.principleText}>{p.detail}</p>
             </div>
           ))}
         </div>
@@ -166,7 +164,7 @@ export default function HomePage() {
         <span className={styles.kicker}>Jak wygląda rozgrywka</span>
         <h2 className={styles.h2}>Pięć mechanik, które przenikają się przez całą wyprawę</h2>
         <p className={styles.lede}>
-          Żadna z nich nie działa w oderwaniu od pozostałych — im dalej w głąb wybrzeża, tym
+          Żadna z nich nie działa w oderwaniu od pozostałych. Im dalej w głąb wybrzeża, tym
           częściej trzeba łączyć je w obrębie jednej łamigłówki.
         </p>
         <div className={styles.grid3}>
@@ -187,8 +185,8 @@ export default function HomePage() {
         <p className={styles.lede}>
           Uczciwie oznaczamy status każdego rozdziału. Obecnie {demoCount}{" "}
           {demoCount === 1 ? "rozdział jest dostępny" : "rozdziałów jest dostępnych"} jako
-          grywalne demo, a {plannedCount} pozostaje w budowie lub w planach — bez podawania
-          dat premiery.
+          grywalne demo, a {plannedCount} pozostaje w budowie lub w planach. Dat premiery nie
+          podajemy.
         </p>
         <div className={styles.chapterList}>
           {chapters.map((c) => (
@@ -252,12 +250,12 @@ export default function HomePage() {
       {/* WYMAGANIA / DOSTĘPNOŚĆ */}
       <section id="dostepnosc" className={`${styles.section} ${styles.sectionTight}`}>
         <span className={styles.kicker}>Wymagania i dostępność</span>
-        <h2 className={styles.h2}>Zanim zaczniesz — kilka konkretów zamiast obietnic</h2>
+        <h2 className={styles.h2}>Zanim zaczniesz: kilka konkretów zamiast obietnic</h2>
         <div className={styles.reqList}>
           <div className={styles.reqRow}>
             <span className={styles.reqLabel}>Platforma</span>
             <span className={styles.reqValue}>
-              Wyłącznie przeglądarka internetowa — na telefonie, tablecie lub komputerze. Bez
+              Wyłącznie przeglądarka internetowa, na telefonie, tablecie lub komputerze. Bez
               instalacji, bez konta.
             </span>
           </div>
@@ -269,17 +267,17 @@ export default function HomePage() {
             </span>
           </div>
           <div className={styles.reqRow}>
-            <span className={styles.reqLabel}>Płatności</span>
+            <span className={styles.reqLabel}>Sterowanie</span>
             <span className={styles.reqValue}>
-              Brak. Wersja demonstracyjna jest bezpłatna i nie zawiera mikropłatności ani
-              elementów losowych.
+              Wyłącznie kliknięcia i dotyk. Do ukończenia fragmentu demonstracyjnego nie są
+              potrzebne żadne skróty klawiszowe ani gesty.
             </span>
           </div>
           <div className={styles.reqRow}>
             <span className={styles.reqLabel}>Sugerowany wiek</span>
             <span className={styles.reqValue}>
-              Treści bez przemocy — nasza opisowa rekomendacja to około 12 lat, bez oficjalnej
-              klasyfikacji wiekowej.
+              Treści są pozbawione przemocy. Nasza opisowa rekomendacja to około 12 lat, bez
+              oficjalnej klasyfikacji wiekowej.
             </span>
           </div>
           <div className={styles.reqRow}>
@@ -309,7 +307,7 @@ export default function HomePage() {
       {/* FAQ */}
       <section id="faq" className={styles.section}>
         <span className={styles.kicker}>Pytania i odpowiedzi</span>
-        <h2 className={styles.h2}>Zanim napiszesz do nas — może już tu jest odpowiedź</h2>
+        <h2 className={styles.h2}>Może odpowiedź jest już tutaj, zanim do nas napiszesz</h2>
         <div className={styles.faqList}>
           {faq.map((f) => (
             <details className={styles.faqItem} key={f.question}>
@@ -331,7 +329,7 @@ export default function HomePage() {
           </h2>
           <div className={styles.finalCtaActions}>
             <Link href="/graj" className={styles.btnPrimary}>
-              Zagraj teraz — za darmo
+              Zagraj teraz
             </Link>
             <Link href="/kontakt" className={styles.btnSecondary}>
               Napisz do nas

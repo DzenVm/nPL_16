@@ -208,6 +208,42 @@
   background: var(--color-abyss-800);
 }
 
+/* PRINCIPLE LIST (distinct from the mechanic card grid on purpose) */
+.principleList {
+  margin-top: var(--space-6);
+  max-width: 46rem;
+}
+
+.principleRow {
+  padding: var(--space-5) 0;
+  border-top: 1px solid rgba(233, 238, 240, 0.08);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.principleRow:last-child {
+  border-bottom: 1px solid rgba(233, 238, 240, 0.08);
+}
+
+@media (min-width: 720px) {
+  .principleRow {
+    grid-template-columns: 15rem 1fr;
+    gap: var(--space-6);
+    align-items: baseline;
+  }
+}
+
+.principleTitle {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  color: var(--color-mist-050);
+}
+
+.principleText {
+  color: var(--color-mist-300);
+  font-size: 0.94rem;
+}
+
 /* CARD GRIDS */
 .grid3 {
   margin-top: var(--space-6);

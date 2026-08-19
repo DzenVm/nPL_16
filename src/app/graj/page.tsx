@@ -5,7 +5,7 @@ import { PlayDemo } from "@/components/play/PlayDemo";
 export const metadata: Metadata = {
   title: "Zagraj w demo",
   description:
-    "Grywalny, skrócony fragment pierwszego rozdziału: przejdź przez wietrzną półkę skalną, wybierz ścieżkę i zbierz pierwszy fragment dziennika ekspedycji. Bez instalacji, bez konta, bez opłat.",
+    "Grywalny, skrócony fragment pierwszego rozdziału: przejdź przez wietrzną półkę skalną, wybierz ścieżkę i zbierz pierwszy fragment dziennika ekspedycji. Bez instalacji, bez konta.",
 };
 
 export default function GrajPage() {
@@ -15,7 +15,7 @@ export default function GrajPage() {
         <span className={styles.kicker}>Wersja demonstracyjna · Rozdział 1</span>
         <h1 className={styles.h1}>Zagraj w skrócony fragment pierwszego rozdziału</h1>
         <p className={styles.lede}>
-          To działający, grywalny wycinek gry — nie zapowiedź ani animacja. Przejdziesz przez
+          To działający, grywalny wycinek gry, nie zapowiedź ani animacja. Przejdziesz przez
           wietrzną półkę skalną, wybierzesz jedną z dwóch ścieżek i zbierzesz pierwszy fragment
           dziennika ekspedycji. Zajmuje to około dwóch–trzech minut.
         </p>
@@ -31,17 +31,17 @@ export default function GrajPage() {
       <div className={styles.helpGrid}>
         <div className={styles.helpCard}>
           <strong>Sterowanie</strong>
-          Wyłącznie kliknięcia lub dotyk — nie są potrzebne żadne klawisze skrótów ani gesty.
+          Wyłącznie kliknięcia lub dotyk. Nie są potrzebne żadne klawisze skrótów ani gesty.
         </div>
         <div className={styles.helpCard}>
           <strong>Zapis postępu</strong>
-          Demo nie zapisuje postępu między wizytami — to pojedynczy, krótki fragment do
+          Demo nie zapisuje postępu między wizytami. To pojedynczy, krótki fragment do
           wypróbowania w jednej sesji.
         </div>
         <div className={styles.helpCard}>
           <strong>Dostępność</strong>
-          Mechanika wskaźnika wiatru respektuje systemowe ustawienie „ogranicz animacje” —
-          w takim wypadku krok jest zatwierdzany od razu, bez elementu czasowego.
+          Mechanika wskaźnika wiatru respektuje systemowe ustawienie „ogranicz animacje”. W
+          takim wypadku krok jest zatwierdzany od razu, bez elementu czasowego.
         </div>
       </div>
     </div>

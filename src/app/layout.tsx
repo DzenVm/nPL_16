@@ -24,11 +24,11 @@ const sora = Sora({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Przygodowa gra przeglądarkowa — eksploracja, wiatr i przypływy | " + site.domain,
+    default: "Przygodowa gra przeglądarkowa o wietrze i przypływach | " + site.domain,
     template: "%s | " + site.domain,
   },
   description:
-    "Przeglądarkowa gra przygodowa bez przemocy i mikropłatności: czytaj wiatr, planuj trasę pod przypływy i składaj historię z odnalezionych notatek. Pierwszy rozdział dostępny jako grywalne demo.",
+    "Przeglądarkowa gra przygodowa: czytaj wiatr, planuj trasę pod przypływy i składaj historię z odnalezionych notatek. Pierwszy rozdział dostępny jako grywalne demo, bez instalacji.",
   applicationName: site.domain,
   alternates: { canonical: "/" },
   openGraph: {
@@ -36,15 +36,15 @@ export const metadata: Metadata = {
     locale: site.locale,
     url: site.url,
     siteName: site.domain,
-    title: "Przygodowa gra przeglądarkowa — eksploracja, wiatr i przypływy",
+    title: "Przygodowa gra przeglądarkowa o wietrze i przypływach",
     description:
-      "Bez przemocy, bez mikropłatności. Czytaj wiatr, planuj trasę pod przypływy, składaj historię z notatek znalezionych po drodze.",
+      "Czytaj wiatr, planuj trasę pod przypływy i składaj historię z notatek znalezionych po drodze. Bez przemocy i bez pośpiechu.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Przygodowa gra przeglądarkowa — eksploracja, wiatr i przypływy",
+    title: "Przygodowa gra przeglądarkowa o wietrze i przypływach",
     description:
-      "Bez przemocy, bez mikropłatności. Czytaj wiatr, planuj trasę pod przypływy, składaj historię z notatek znalezionych po drodze.",
+      "Czytaj wiatr, planuj trasę pod przypływy i składaj historię z notatek znalezionych po drodze. Bez przemocy i bez pośpiechu.",
   },
   robots: { index: true, follow: true },
   icons: {
@@ -64,7 +64,7 @@ const websiteJsonLd = {
   url: site.url,
   inLanguage: site.language,
   description:
-    "Przeglądarkowa gra przygodowa bez przemocy i mikropłatności, we wczesnej fazie produkcji, z grywalnym demem pierwszego rozdziału.",
+    "Przeglądarkowa gra przygodowa we wczesnej fazie produkcji, z grywalnym demem pierwszego rozdziału.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

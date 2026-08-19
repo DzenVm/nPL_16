@@ -27,9 +27,9 @@ export default function RegulaminPage() {
         <ul>
           <li><strong>Serwis</strong> — strona internetowa dostępna pod adresem {site.domain}.</li>
           <li>
-            <strong>Wersja demonstracyjna</strong> — udostępniony bezpłatnie, skrócony,
-            grywalny fragment pierwszego rozdziału opisywanej gry, dostępny w przeglądarce bez
-            konieczności instalacji.
+            <strong>Wersja demonstracyjna</strong> — udostępniony w przeglądarce, skrócony,
+            grywalny fragment pierwszego rozdziału opisywanej gry, dostępny bez konieczności
+            instalacji.
           </li>
           <li><strong>Użytkownik</strong> — każda osoba korzystająca z serwisu.</li>
         </ul>
@@ -39,13 +39,13 @@ export default function RegulaminPage() {
           Serwis ma charakter informacyjno-prezentacyjny i przedstawia projekt gry
           przeglądarkowej znajdujący się we wczesnej fazie produkcji. Status poszczególnych
           elementów (dostępny jako demo, w budowie, planowany) jest opisany wprost przy każdym z
-          nich. Serwis nie stanowi sklepu z aplikacjami ani platformy dystrybucji gier — pełna
-          wersja gry, poza opisaną wersją demonstracyjną, nie jest obecnie dostępna do pobrania.
+          nich. Serwis nie stanowi sklepu z aplikacjami ani platformy dystrybucji gier. Poza
+          opisaną wersją demonstracyjną, pełna wersja gry nie jest obecnie dostępna do pobrania.
         </p>
 
         <h2>4. Zasady korzystania</h2>
         <ul>
-          <li>Korzystanie z serwisu i wersji demonstracyjnej jest dobrowolne i bezpłatne.</li>
+          <li>Korzystanie z serwisu i wersji demonstracyjnej jest dobrowolne.</li>
           <li>
             Wersja demonstracyjna nie wymaga zakładania konta ani podawania danych osobowych.
           </li>
@@ -79,8 +79,8 @@ export default function RegulaminPage() {
             urządzeniem lub przeglądarką.
           </li>
           <li>
-            Serwis nie zawiera treści dla dorosłych ani elementów hazardowych, mikropłatności
-            czy elementów o charakterze losowym.
+            Serwis nie zawiera treści dla dorosłych. Ilustracje mają charakter koncepcyjny i
+            mogą różnić się od docelowego wyglądu poszczególnych lokacji.
           </li>
         </ul>
 

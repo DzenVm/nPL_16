@@ -40,7 +40,7 @@ export function PlayDemo() {
               stąd fale rozbijają się o skały. Przed Tobą wąska, wietrzna półka skalna.
             </p>
             <p className={styles.sceneText}>
-              To skrócony, w pełni grywalny fragment pierwszego rozdziału — bez instalacji,
+              To skrócony, w pełni grywalny fragment pierwszego rozdziału: bez instalacji,
               bez konta, bez limitu czasu.
             </p>
             <div className={styles.choices}>
@@ -66,9 +66,9 @@ export function PlayDemo() {
           <>
             <p className={styles.sceneLabel}>Rozwidlenie szlaku</p>
             <p className={styles.sceneText}>
-              Po przejściu przez wietrzną półkę szlak się rozdziela. Po lewej — wąski karnisz
-              biegnący tuż nad urwiskiem, wyraźnie krótszy. Po prawej — wyschnięte koryto dawnego
-              potoku, dłuższe, ale osłonięte od wiatru.
+              Po przejściu przez wietrzną półkę szlak się rozdziela. Po lewej rozciąga się wąski
+              karnisz tuż nad urwiskiem: krótszy, ale odsłonięty na wiatr. Po prawej dnem
+              wyschniętego potoku biegnie dłuższa droga, za to osłonięta od podmuchów.
             </p>
             <div className={styles.choices}>
               <button
@@ -135,8 +135,8 @@ export function PlayDemo() {
               horyzoncie i błysk czegoś, co może być latarnią.
             </p>
             <p className={styles.sceneText}>
-              Masz już pierwszy fragment do dziennika ekspedycji. Reszta rozdziału — łącznie z
-              dalszą częścią zatoki — jest wciąż w budowie.
+              Masz już pierwszy fragment do dziennika ekspedycji. Reszta rozdziału, łącznie z
+              dalszą częścią zatoki, jest wciąż w budowie.
             </p>
             <div className={styles.choices}>
               <button type="button" className={styles.choiceBtn} onClick={() => setScene("epilogue")}>
@@ -150,9 +150,9 @@ export function PlayDemo() {
           <>
             <p className={styles.sceneLabel}>Koniec fragmentu demonstracyjnego</p>
             <p className={styles.sceneText}>
-              To był skrócony wycinek pierwszego rozdziału — w pełnej wersji „Klify Startowe”
-              trwają znacznie dłużej i prowadzą aż do brzegu zatoki. Kolejne rozdziały opisane na
-              stronie głównej są obecnie w budowie lub w fazie planowania.
+              To był skrócony wycinek pierwszego rozdziału. W pełnej wersji „Klify Startowe”
+              rozgrywka trwa znacznie dłużej i prowadzi aż do brzegu zatoki. Kolejne rozdziały
+              opisane na stronie głównej są obecnie w budowie lub w fazie planowania.
             </p>
             <p className={styles.sceneText}>
               Dziękujemy za wypróbowanie tego fragmentu. Jeśli coś nie zadziałało tak, jak

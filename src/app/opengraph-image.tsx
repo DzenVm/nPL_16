@@ -42,7 +42,7 @@ export default async function OpengraphImage() {
           Przygodowa gra przeglądarkowa: wiatr, przypływy i mapa rysowana własnoręcznie
         </div>
         <div style={{ display: "flex", fontSize: 30, color: "#b9c7ce", marginTop: 32 }}>
-          pojekamlis.online — bez przemocy, bez mikropłatności
+          pojekamlis.online
         </div>
       </div>
     ),

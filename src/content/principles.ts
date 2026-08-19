@@ -4,12 +4,12 @@ const raw: Principle[] = [
   {
     title: "Bez presji czasu na wynik",
     detail:
-      "Rytm przypływów czy wiatru dotyczy pojedynczych przejść, nie całej rozgrywki. Nie ma tu punktacji za szybkość ani kar za powolne zwiedzanie — można usiąść na klifie i po prostu popatrzeć na mgłę.",
+      "Rytm przypływów czy wiatru dotyczy pojedynczych przejść, nie całej rozgrywki. Nie ma tu punktacji za szybkość ani kar za powolne zwiedzanie. Można usiąść na klifie i po prostu popatrzeć na mgłę.",
   },
   {
-    title: "Zero mikropłatności i elementów losowych",
+    title: "Ilustracje bez udawania czegoś więcej",
     detail:
-      "Żaden przedmiot w grze nie jest kupowany za realne pieniądze ani losowany. Soczewki, notatki i fragmenty map zdobywa się wyłącznie przez eksplorację i rozwiązywanie łamigłówek.",
+      "Obrazy w galerii to szkice nastroju poszczególnych miejsc, nie zrzuty ekranu z gotowej gry. Piszemy to wprost przy każdej ilustracji, zamiast liczyć na to, że nikt nie zapyta.",
   },
   {
     title: "Historia bez narzuconej kolejności",
@@ -24,12 +24,12 @@ const raw: Principle[] = [
   {
     title: "Lekkość techniczna",
     detail:
-      "Wersja demonstracyjna działa w przeglądarce bez pobierania i celowo unika ciężkich silników graficznych — animacje cząsteczek wiatru i bursztynu są renderowane bezpośrednio na płótnie canvas, bez zewnętrznych bibliotek graficznych.",
+      "Wersja demonstracyjna działa w przeglądarce bez pobierania i celowo unika ciężkich silników graficznych. Animacje cząsteczek wiatru i bursztynu renderujemy bezpośrednio na płótnie canvas, bez zewnętrznych bibliotek graficznych.",
   },
   {
     title: "Dostępność jako punkt wyjścia",
     detail:
-      "Kontrast tekstu, obsługa nawigacji klawiaturą i szanowanie ustawienia „ogranicz animacje” w systemie nie są dodatkiem na później — sprawdzamy je od pierwszej wersji każdej podstrony.",
+      "Kontrast tekstu, obsługa nawigacji klawiaturą i szanowanie systemowego ustawienia „ogranicz animacje” nie są dodatkiem na później. Sprawdzamy je od pierwszej wersji każdej podstrony.",
   },
 ];
 

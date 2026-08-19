@@ -48,8 +48,8 @@ export function CookieConsent() {
     <div className={styles.wrap} role="dialog" aria-live="polite" aria-label="Zgoda na pliki cookie">
       <div className={styles.panel}>
         <p className={styles.text}>
-          Ten serwis używa plików cookie niezbędnych do jego działania oraz — wyłącznie za Twoją
-          zgodą — plików analitycznych i reklamowych (w tym związanych z Google Ads). Szczegóły
+          Ten serwis używa plików cookie niezbędnych do jego działania oraz, wyłącznie za Twoją
+          zgodą, plików analitycznych i reklamowych (w tym związanych z Google Ads). Szczegóły
           znajdziesz w{" "}
           <Link href="/cookies">polityce plików cookie</Link> i{" "}
           <Link href="/polityka-prywatnosci">polityce prywatności</Link>.
