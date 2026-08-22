@@ -29,7 +29,12 @@ function hasStoredConsent() {
 }
 
 function getServerHasConsent() {
-  return true;
+  // Render the banner in the initial server HTML too, the same way a
+  // first-time visitor without a stored choice sees it. Defaulting to
+  // "consent already given" here would make the server-rendered markup
+  // (what a crawler or a raw HTML fetch sees) differ from what every
+  // real first-time visitor's browser actually paints.
+  return false;
 }
 
 export function CookieConsent() {
